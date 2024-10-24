@@ -1,5 +1,6 @@
 import { PROJECTS } from '../constants';
 import {motion} from "framer-motion";
+import Image from "next/Image"; // Ensure Link is imported
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
             className="w-full lg:w-1/4">
-                <img 
+                <Image 
                 src={project.image} 
                 width={150} 
                 height={150} 
