@@ -1,10 +1,10 @@
 // src/components/Navbar.jsx
 import logo from "../assets/images/logo.png";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { FaSquareXTwitter, FaUpwork } from "react-icons/fa6";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaUpwork } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
-import Link from "next/link"; // Ensure Link is imported
-import Image from "next/Image"; // Ensure Link is imported
+import Image from "next/Image"; 
+import React from 'react'; // Add this line
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex flex-shrink-0 items-center">
         <Image className="mx-2 w-10 ml-4" src={logo} alt="Logo" />
       </div>
-      <div className="m-8 flex justify-center items-center gap-4 text-2xl">
+      <div className="m-8 flex justify-center items-center gap-4 text-2xl text-white">
         <a
           href="https://www.linkedin.com/in/abdul-rafay-bakhai-/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
@@ -39,13 +39,6 @@ const Navbar = () => {
           <CgWebsite />
         </a>
       </div>
-      {/* <div>
-        <Link href="/contact">
-          <span className=" px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 mr-4">
-            Contact Us
-          </span>
-        </Link>
-      </div> */}
     </nav>
   );
 };

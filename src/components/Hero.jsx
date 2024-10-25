@@ -3,6 +3,7 @@ import profilePic from "../assets/images/profile5.png";
 import { motion } from "framer-motion";
 import Link from "next/link"; // Ensure Link is imported
 import Image from "next/Image"; // Ensure Link is imported
+import React from 'react'; // Add this line
 
 
 const container = (delay) => ({

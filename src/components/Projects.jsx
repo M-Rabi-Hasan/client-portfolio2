@@ -1,6 +1,7 @@
 import { PROJECTS } from '../constants';
 import {motion} from "framer-motion";
 import Image from "next/Image"; // Ensure Link is imported
+import React from 'react'; // Add this line
 
 const Projects = () => {
   return (

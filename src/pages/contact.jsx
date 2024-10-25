@@ -1,8 +1,8 @@
 // src/pages/contact.jsx
 import { useState } from 'react';
 import axios from 'axios';
-import Navbar from '../components/Navbar';
 import Link from "next/link"; 
+import React from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -20,7 +20,7 @@ const Contact = () => {
       await axios.post('/api/contact', formData);
       alert('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
+    } catch {
       alert('There was an error sending your message.');
     } finally {
       setIsSubmitting(false);
@@ -39,9 +39,7 @@ const Contact = () => {
           </div>
         
         </div>
-        <div className='container mx-auto px-8'>
-          <Navbar/>
-        </div>
+        
     <div className="container mx-auto px-12 py-20 md:flex md:justify-between">
       <div className='max-w-md'>
         <h1 className="text-3xl font-bold mb-4">Contact

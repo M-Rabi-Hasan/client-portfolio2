@@ -2,6 +2,7 @@ import aboutImg from "../assets/images/about.jpg";
 import {ABOUT_TEXT} from "../constants";
 import {motion} from "framer-motion";
 import Image from "next/Image"; // Ensure Link is imported
+import React from 'react'; // Add this line
 
 const About = () => {
   return (

@@ -1,9 +1,3 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { SiAdobephotoshop } from "react-icons/si";
 import { FiFigma } from "react-icons/fi";
 import { SiSketch } from "react-icons/si";
@@ -11,6 +5,7 @@ import { SiAdobeillustrator } from "react-icons/si";
 import { DiPhotoshop } from "react-icons/di";
 import { SiAdobexd } from "react-icons/si";
 import { motion } from "framer-motion";
+import React from 'react'; // Add this line
 
 const iconVariants = (duration) => ({
     initial: {y: -10},
